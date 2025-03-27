@@ -1,8 +1,11 @@
 # Name of workflow
 name: Lint and Test workflow
 
-# Trigger workflow on all pull requests
-on:
+# Trigger workflow on push and pull requests
+on: 
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - develop
